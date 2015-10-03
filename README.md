@@ -17,8 +17,18 @@ $ npm install --save lwip-jpeg-autorotate
 ```js
 var lwipJpegAutorotate = require('lwip-jpeg-autorotate');
 
-lwipJpegAutorotate('Rainbow');
+lwipJpegAutorotate.autorotate(inputpath, outputpath).then(function (res) {
+    // ok
+
+}, function (err) {
+    // unexpected error
+
+});
+
+
 ```
+
+
 
 ## Development
 
