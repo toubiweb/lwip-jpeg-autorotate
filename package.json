@@ -1,0 +1,49 @@
+{
+  "name": "lwip-jpeg-autorotate",
+  "version": "0.0.0",
+  "description": "Read exif data and auto rotate jpeg images lwip library.",
+  "homepage": "https://github.com/toubiweb/lwip-jpeg-autorotate",
+  "repository": "toubiweb/lwip-jpeg-autorotate",
+  "author": {
+    "name": "Nicolas Toublanc",
+    "email": "n.toublanc@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "keywords": [
+    "lwip",
+    "exif",
+    "rotate",
+    "jpeg",
+    "jpg"
+  ],
+  "devDependencies": {
+    "babel-core": "^5.5.0",
+    "chai": "^3.3.0",
+    "gulp": "^3.6.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^0.4.5",
+    "gulp-plumber": "^1.0.0",
+    "isparta": "^3.0.3"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "exif-parser": "^0.1.9",
+    "lwip": "0.0.7",
+    "mkdirp": "^0.5.1",
+    "q": "^1.4.1"
+  }
+}
