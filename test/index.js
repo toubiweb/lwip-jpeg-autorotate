@@ -10,6 +10,9 @@ describe('lwip-jpeg-autorotate', function () {
 
     it('Do not rotate PNG', function () {
         
+        // this test is slower
+        this.timeout(5000);
+        
         return doTest(1, '.png').then(function (res) {
 
             expect(res.operations).to.deep.equal({});
