@@ -38,6 +38,10 @@ lwipJpegAutorotate.autorotate(inputpath, outputpath).then(function (res) {
 });
 ```
 
+## Alternative
+
+The following library is doing the same job: https://github.com/vonheim/node-auto-rotate
+
 ## Development
 
 ### Logs
