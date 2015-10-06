@@ -20,6 +20,19 @@ var lwipJpegAutorotate = require('lwip-jpeg-autorotate');
 
 lwipJpegAutorotate.autorotate(inputpath, outputpath).then(function (res) {
   // ok
+  
+  console.log(res);
+/* =>  
+{ 
+    inputpath: '/home/lwip-jpeg-autorotate/test/images/Landscape_2.jpg',
+    outputpath: '/home/lwip-jpeg-autorotate/test/images/Landscape_2.output.jpg',
+    buffer: <Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 01 00 48 00 48 00 00 ff e2 07 b8 49 43 43 5f 50 52 4f 46 49 4c 45 00 01 01 00 00 07 a8 61 70 70 6c 02 20 00 00 ... >,
+    operations: { mirror: { axes: 'x' } },
+    extension: 'jpg',
+    image: { __lwip: {}, __locked: false, __trans: false } 
+}
+*/
+
 }, function (err) {
   // unexpected error
 });
