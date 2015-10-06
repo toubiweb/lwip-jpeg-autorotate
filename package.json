@@ -1,6 +1,6 @@
 {
   "name": "lwip-jpeg-autorotate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Read exif data and auto rotate jpeg images using lwip library.",
   "homepage": "https://github.com/toubiweb/lwip-jpeg-autorotate",
   "repository": "toubiweb/lwip-jpeg-autorotate",
