@@ -1,4 +1,5 @@
-p-jpeg-autorotate
+#lwip-jpeg-autorotate
+
 > Rotate images automatically based on EXIF orientation tag.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
@@ -6,6 +7,11 @@ p-jpeg-autorotate
 - Reads the EXIF orientation tag from jpeg file
 - Automatically rotates/flips using [lwip](https://github.com/EyalAr/lwip)
 - Fails silently when EXIF data is not present or image is not a jpeg
+
+
+## Alternative
+
+Please have a look at the following module as it is much more active: https://github.com/johansatge/jpeg-autorotate
 
 ## Install
 
@@ -20,16 +26,16 @@ var lwipJpegAutorotate = require('lwip-jpeg-autorotate');
 
 lwipJpegAutorotate.autorotate(inputpath, outputpath).then(function (res) {
   // ok
-  
+
   console.log(res);
-/* =>  
-{ 
+/* =>
+{
     inputpath: '/home/lwip-jpeg-autorotate/test/images/Landscape_2.jpg',
     outputpath: '/home/lwip-jpeg-autorotate/test/images/Landscape_2.output.jpg',
     buffer: <Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 01 00 48 00 48 00 00 ff e2 07 b8 49 43 43 5f 50 52 4f 46 49 4c 45 00 01 01 00 00 07 a8 61 70 70 6c 02 20 00 00 ... >,
     operations: { mirror: { axes: 'x' } },
     extension: 'jpg',
-    image: { __lwip: {}, __locked: false, __trans: false } 
+    image: { __lwip: {}, __locked: false, __trans: false }
 }
 */
 
@@ -37,10 +43,6 @@ lwipJpegAutorotate.autorotate(inputpath, outputpath).then(function (res) {
   // unexpected error
 });
 ```
-
-## Alternative
-
-The following library is doing the same job: https://github.com/vonheim/node-auto-rotate
 
 ## Development
 
@@ -61,9 +63,9 @@ Test images are provided by [EXIF Orientation-flag example images](https://githu
 To run tests + coverage:
 
     npm test
-    
+
 or
-    
+
     gulp
 
 To run tests only
@@ -90,4 +92,3 @@ Apache-2.0 © [Nicolas Toublanc]()
 [daviddm-url]: https://david-dm.org/toubiweb/lwip-jpeg-autorotate
 [coveralls-image]: https://coveralls.io/repos/toubiweb/lwip-jpeg-autorotate/badge.svg
 [coveralls-url]: https://coveralls.io/r/toubiweb/lwip-jpeg-autorotate
-
