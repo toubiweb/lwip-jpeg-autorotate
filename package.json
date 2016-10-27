@@ -48,7 +48,7 @@
       "mocha": true
     }
   },
-  "repository": "git@github.com:toubiweb/docker-node-dev-tools.git",
+  "repository": "git@github.com:toubiweb/lwip-jpeg-autorotate.git",
   "scripts": {
     "test": "ava"
   },
